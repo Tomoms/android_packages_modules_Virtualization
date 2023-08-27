@@ -19,6 +19,7 @@ rust_bindgen {
         "libcrypto",
     ],
     cflags: ["-DBORINGSSL_NO_CXX"],
+    visibility: ["//packages/modules/Virtualization:__subpackages__"],
 }
 
 rust_test {
